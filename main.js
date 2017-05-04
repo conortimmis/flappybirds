@@ -42,9 +42,7 @@ var mainState = {
 		
 		//Score
 this.score = 0;
-
 this.labelScore = game.add.text(20, 20, "0",
-
 { font: "30px Arial", fill: "#ffffff" });
 		
 	},
@@ -59,8 +57,8 @@ this.labelScore = game.add.text(20, 20, "0",
 		
 		//calls the restartGame function each time the bird dies
 game.physics.arcade.overlap(this.bird, this.pipes, this.restartGame,
-
 null, this);
+		
 	},
 	
 	jump: function() {
